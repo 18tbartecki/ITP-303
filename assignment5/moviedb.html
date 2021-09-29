@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Movie DB</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+		<link rel="stylesheet" href="style.css">
+		
+	</head>
+	<body>
+		<div class="container-fluid">
+
+			<div class="row" id="header">
+				<h1 class="col-12 mt-4">Cinema News Vendor</h1>
+			</div> <!-- .row -->
+
+			<div class="row">
+
+				<form class="col-12" id="search-form">
+					<div class="form-row">
+
+						<div class="col-12 mt-4 col-sm-6 col-lg-4">
+							<label for="search-id" class="sr-only">Search:</label>
+							<input type="text" class="form-control" id="search-id" placeholder="Search...">
+						</div>
+
+						<div class="col-12 mt-4 col-sm-auto">
+							<button type="submit" class="btn btn-primary btn-block">Search</button>
+						</div>
+
+					</div> <!-- .form-row -->
+				</form>
+
+			</div> <!-- .row -->
+
+			<div class="row">
+				<div class="col-12 mt-4" id="results">
+					Showing <span id="num-results-showing" class="font-weight-bold"></span> of <span id="num-results" class="font-weight-bold"></span> result(s).
+				</div>
+				<div class="col-12 mt-4 hidden" id="no-results"> </div>
+			</div> <!-- .row -->
+			<div class="row" id="all-movies">
+				<!-- <div class="movie col-6 col-md-4 col-lg-3">
+					<div class="backdrop">
+						<img src="Structure" alt="Structure">
+						<div class="overlay">
+							<div class="rating"> </div>
+							<div class="voters"> </div>
+							<div class="synopsis"> </div>
+						</div>
+					</div>
+					<div class="title"> </div>
+					<div class="date"> </div>
+					
+				</div> -->
+			</div>
+
+		</div> <!-- .container-fluid -->
+		<script src="main.js"></script>
+	</body>
+</html>

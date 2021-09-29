@@ -1,0 +1,78 @@
+body {
+	margin: 0;
+	text-align: center;
+}
+
+#header {
+	text-align: left;
+}
+
+.movie {
+	position: relative;
+	width: 50%;
+}
+ 
+img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 1s ease;
+  background: rgba(0, 0, 0, .6);
+}
+
+.backdrop {
+	position: relative;
+}
+
+.movie:hover .overlay {
+	opacity: 1;
+}
+
+.movie:hover img {
+	opacity: .5;
+}
+
+.rating {
+	top: 5%;
+	left: 50%;
+}
+
+.voters {
+	top: 10%;
+	left: 50%;
+}
+
+.synopsis {
+	top: 35%;
+	left: 50%;
+	width: 80%;
+}
+
+.rating, .voters, .synopsis {
+  color: white;
+  font-size: 12px;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-weight: bold;
+}
+
+.hidden {
+	display: none;
+}
+
+#results, #no-results {
+	text-align: left;
+	margin-bottom: 10px;
+}

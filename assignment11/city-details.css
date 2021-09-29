@@ -1,0 +1,55 @@
+body{
+	margin: 0;
+	background-color: #333533;
+	color: #DCC5E7;
+	position: relative;
+	min-height: 100%;
+	min-height: 100vh;
+}
+
+h1 {
+	color: #DCC5E7;
+}
+
+#location a {
+	color: #DCC5E7;
+}
+
+h4 {
+	color: #FFFAFB;
+}
+
+nav {
+	background: #188FA7;
+}
+
+
+#logout, #favorites, #login, #signup {
+	color: #FFFAFB;
+}
+
+#search {
+	background-color: #87D68D;
+	color: #333533;
+	font-weight: bold;
+	width: 200px;
+}
+
+#city-row {
+	max-width: 700px;
+}
+
+.metric-heading {
+	font-size: 24px;
+	text-align: center;
+}
+
+.index {
+	font-size: 48px;
+	text-align: center;
+}
+
+.graph {
+	text-align: center;
+	margin-top: 60px;
+}

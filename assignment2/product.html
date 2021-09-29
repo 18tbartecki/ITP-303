@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>Crest Whitestrips</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1">
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates&display=swap" rel="stylesheet">
+		<style>
+			html,body {
+				margin: 0;
+				padding: 0;
+			}
+
+			li {
+				font-size: 20px;
+				margin-left: 3%;
+			}
+			#header {
+				height: 65px;
+				background-color: skyblue;
+				
+			}
+
+			#header h1 {
+				font-size: 25px;
+				color: white;
+				margin: 0;
+				text-align: center;
+				font-family: 'Montserrat Alternates', sans-serif;
+				line-height: 65px;
+			}
+
+			#container {
+				max-width: 1000px;
+				margin-left: auto;
+				margin-right: auto;
+			}
+
+			#mobile-name h1 {
+				font-family: 'Montserrat Alternates', sans-serif;
+				font-size: 40px;
+				margin: 50px 2%;
+			}
+
+			#product {
+				width: 98%;
+				margin-top: 10px;
+				margin-bottom: 10px;
+			}
+
+			#feature {
+				float: left;
+				width: 96%;
+				margin: 2%;
+			}
+
+			#feature img {
+				width: 100%;
+				margin-bottom: 10px;
+			}
+
+			#promo {
+				border: 2px solid green;
+				background-color: #cefdce;
+				width: 85%;
+				margin-left: auto;
+				margin-right: auto;
+				text-align: center;
+				font-size: 18px;
+				height: auto;
+				line-height: 40px;
+			}
+
+			#info {
+				float: left;
+				width: 96%;
+				margin: 2%;
+			}
+			#info h2 {
+				font-size: 25px;
+				margin-top: 30px;
+			}
+
+			#info img {
+				width: 50%;
+			}
+
+			#nonmobile-name {
+				display: none;
+				font-family: 'Montserrat Alternates', sans-serif;
+			}
+
+			#product:after {
+				content: "";
+				clear: both;
+				display: table;
+			}
+
+
+			#related {
+				width: 96%;
+				padding: 2%;
+			}
+
+			#related h2 {
+				font-family: 'Montserrat Alternates', sans-serif;
+				margin-left: 1%;
+				margin-bottom: 20px;
+			}
+
+			#related .row .related-product {
+				float: left;
+				width: 50%;
+				margin-left: 25%;
+				margin-right: 25%;
+				margin-bottom: 25px;
+				padding: 20px;
+				box-sizing: border-box;
+				border: 2px solid black;
+				position: relative;
+			}
+
+			#related .row .related-product:hover {
+				background: rgba(0, 0, 0, .6);
+			}
+
+			#related .row .related-product:hover img {
+				opacity: .5;
+			}
+
+			#related .row .related-product:hover .name {
+				visibility: visible;
+			}
+
+			#related .name {
+				font-weight: bold;
+				text-align: center;
+				visibility: hidden;
+				position: absolute;
+				top:50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				color: white;
+				font-size: 25px;
+			}
+
+			.related-product img {
+				width: 100%;
+			}
+
+
+			/* Add the following for screen sizes more than 768px */
+			@media(min-width: 768px) {
+				#mobile-name h1 {
+					display: none;
+				}
+				#feature {
+					width: 48%;
+					margin: 1%;
+				}
+				#info {
+					width: 48%;
+					margin: 1%
+				}
+				#nonmobile-name {
+					display: block;
+				}
+
+				#related .row .related-product {
+					width: 48%;
+					margin: 1%;
+				}
+				
+			}
+
+			/* Add the following for screen sizes more than 992px */
+			@media(min-width: 992px) {
+				#related .row .related-product {
+					width: 23%;
+					margin: 1%;
+				}
+				#related h2 {
+					margin-bottom: 20px;
+					font-size: 25px;
+					margin-left: 1%;
+				}
+				#promo {
+					width: 70%;
+				}
+			}
+
+
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<h1> Tommy's Store </h1>
+		</div>
+		<div id="container">
+			<div id="mobile-name"> 
+				<h1> Crest 3D Professional Effects Whitestrips</h1>
+			</div>
+
+			<div id="product">
+				<div id="feature">
+					<img src="images/creststrip.png" alt="Crest Whitestrips"/>
+					<div id="promo"> Use promo code 20OFF to get 20% off!</div>
+				</div>
+				<div id="info">
+					<div id="nonmobile-name">
+						<h1> Crest 3D Professional Effects Whitestrips</h1>
+					</div>
+					<h2> Price: $45.99 </h2>
+					<img src="images/rating.png" alt="Ratings"/>
+					<ul>
+						<li> LASTS 12 MONTHS & BEYOND </li>
+						<li>	Use once a day for 30 minutes </li>
+						<li>	Removes 14 years of teeth stains for a whiter smile </li>
+						<li> Do not use this light device if you have oral cancer, are being treated with photodynamic </li>
+						<li>	Delivers professional-level teeth whitening results </li>
+						<li>	Advanced Seal Technology’s no slip grip stays put so you can talk and drink water while whitening teeth </li>
+					</ul>
+				</div>
+			</div>
+
+
+			<div id="related">
+				<h2> Related Products </h2>
+				<div class="row">
+					<div class="related-product">
+						<img src="images/whitestrips-extra.png" alt="Crest 3D Glamorous White Whitestrips"/>
+						<div class="name"> Crest 3D Glamorous White Whitestrips</div>
+					</div>
+					<div class="related-product">
+						<img src="images/mouthwash.png" alt="Crest Glamorous White Mouthwash"/>
+						<div class="name"> Crest Glamorous White Mouthwash</div>
+					</div>
+					<div class="related-product">
+						<img src="images/toothpaste.png" alt="Crest Repair Toothpaste"/>
+						<div class="name"> Crest Repair Toothpaste</div>
+					</div>
+					<div class="related-product">
+						<img src="images/auraglow.png" alt="Auraglow Whitestrips"/>
+						<div class="name"> Auraglow Whitestrips</div>
+					</div>
+				</div>
+			</div>
+
+		</div>
+	</body>
+</html>

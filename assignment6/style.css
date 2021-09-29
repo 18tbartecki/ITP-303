@@ -1,0 +1,68 @@
+body {
+	font-family: 'Roboto', sans-serif;
+	margin: 0;
+	background-color: #123C69;
+	font-size: 20px;
+}
+
+#weather {
+	border-style: solid;
+	border-color: #007bff;
+	width: 800px;
+	margin: auto;
+	margin-bottom: 100px;
+	color: white;
+	background-color: #007bff;
+	text-align: center;
+	font-size: 16px;
+}
+
+#container {
+	width: 500px;
+	margin: auto;
+	box-shadow: 28px 12px 2px 1px rgba(135, 206, 250, .6);
+}
+
+#list-header {
+	background-color: skyblue;
+}
+
+#list-header h1 {
+	font-size: 55px;
+	padding: 10px;
+	color: white;
+	font-weight: bold;
+	padding-left: 20px;
+}
+
+#adder {
+	font-size: 55px;
+	color: white;
+}
+
+#items {
+	padding: 0;
+}
+
+#new_item {
+	height: 45px;
+	width: 100%;
+}
+
+.task:hover {
+	opacity: .6;
+	
+}
+
+#input-field {
+	padding: 0;
+}
+
+.completed {
+	text-decoration: line-through;
+}
+
+.done {
+	opacity: .6;
+}
+
